@@ -60,7 +60,7 @@ const Content = ({items,handleCheck, handleDelete}) => {
   // }
   
   return (
-    <main>
+    <>
       {(items.length) ? (
          <ItemsList 
          items = {items}
@@ -69,7 +69,7 @@ const Content = ({items,handleCheck, handleDelete}) => {
       ) : 
       <p style = {{marginTop : '2rem',fontFamily: "monospace"}}>Your list is empty</p>
       }
-    </main>
+      </>
   )
 }
 export default Content;
